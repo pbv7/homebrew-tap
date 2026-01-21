@@ -5,21 +5,21 @@
 class Pingheat < Formula
   desc "Network latency heatmap visualizer"
   homepage "https://github.com/pbv7/pingheat"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pbv7/pingheat/releases/download/v0.1.0/pingheat_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "45ba31a5fc44acc76afa4747d5b89c0d42c2b1de8f19149f3827f06375055f4e"
+      url "https://github.com/pbv7/pingheat/releases/download/v0.1.1/pingheat_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "a27f2dfbdb7b416bc8d41fe992871bbf44e0e1d113297555eba77753eb260b29"
 
       def install
         bin.install "pingheat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pbv7/pingheat/releases/download/v0.1.0/pingheat_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "c7d82797d586f503fad799365cda8fdfeb361a75ad9c9a9c5606b3308bb41f62"
+      url "https://github.com/pbv7/pingheat/releases/download/v0.1.1/pingheat_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "47bf92ae94d3c1fdacfae83c77da2e3df1ffe5db61aa0054e01ff7434ec751fe"
 
       def install
         bin.install "pingheat"
@@ -29,15 +29,15 @@ class Pingheat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pbv7/pingheat/releases/download/v0.1.0/pingheat_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "11362a8f1d50d647fc3ec867e4092258667f2f2ac1ecd5f0596a793bbc98d45f"
+      url "https://github.com/pbv7/pingheat/releases/download/v0.1.1/pingheat_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "64d1131035b865f67d0e845dfd2750344da425c2f045635dbc193cbcd3263d45"
       def install
         bin.install "pingheat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pbv7/pingheat/releases/download/v0.1.0/pingheat_0.1.0_Linux_arm64.tar.gz"
-      sha256 "68230909051c66f9db6883d31ea79d21ab511fc885b0458159f84e5fc3fc3e84"
+      url "https://github.com/pbv7/pingheat/releases/download/v0.1.1/pingheat_0.1.1_Linux_arm64.tar.gz"
+      sha256 "22fb27080cc173d5cdb66b22fa4c2af3e5ae75833cda6cdb672276158afc0cb4"
       def install
         bin.install "pingheat"
       end
