@@ -5,21 +5,21 @@
 class Pingheat < Formula
   desc "Network latency heatmap visualizer"
   homepage "https://github.com/pbv7/pingheat"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pbv7/pingheat/releases/download/v0.3.0/pingheat_0.3.0_Darwin_x86_64.tar.gz"
-      sha256 "8488cd12da752d9f3752da9d3f94fcafbee91a7dca42cd61d78f07933c39bf9a"
+      url "https://github.com/pbv7/pingheat/releases/download/v0.4.0/pingheat_0.4.0_Darwin_x86_64.tar.gz"
+      sha256 "4cb11fe4f51b016974835484bb17d85558fb498da17a30097959e9736c9988f6"
 
       def install
         bin.install "pingheat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pbv7/pingheat/releases/download/v0.3.0/pingheat_0.3.0_Darwin_arm64.tar.gz"
-      sha256 "0b022a3f50b12216798e7167e0dd6c87a69010c84450e7d3f4825a317fb15def"
+      url "https://github.com/pbv7/pingheat/releases/download/v0.4.0/pingheat_0.4.0_Darwin_arm64.tar.gz"
+      sha256 "a411903d6a0649cfe6c9c51c2c62bf4e182cfd894532e121954783b696d1fd15"
 
       def install
         bin.install "pingheat"
@@ -28,16 +28,16 @@ class Pingheat < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pbv7/pingheat/releases/download/v0.3.0/pingheat_0.3.0_Linux_x86_64.tar.gz"
-      sha256 "fa4249f25c0906bb31e86201c2d2052f40a5a4a643205023d7b88b67056a2e36"
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/pbv7/pingheat/releases/download/v0.4.0/pingheat_0.4.0_Linux_x86_64.tar.gz"
+      sha256 "27fac6467a591d719d3b19ea9ace3ccdc2c3f11f582487159332985f36b85c44"
       def install
         bin.install "pingheat"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pbv7/pingheat/releases/download/v0.3.0/pingheat_0.3.0_Linux_arm64.tar.gz"
-      sha256 "b2d91f30afe633b512b2429c77e06f97b40880573e68a37479a3e32580dd3a62"
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/pbv7/pingheat/releases/download/v0.4.0/pingheat_0.4.0_Linux_arm64.tar.gz"
+      sha256 "ae6eca4dc49d599301b66516c6ffdb0a7f3db105b72394f4a6dd437b6b8bacd3"
       def install
         bin.install "pingheat"
       end
